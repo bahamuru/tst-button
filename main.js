@@ -6,11 +6,13 @@ async function main() {
   await ledPort.export("out");
 
   let lit = false;
+
   button.onclick = async function () {
     lit = !lit;
 
     const color = lit ? "red" : "black";
     ledView.style.backgroundColor = color;
+
 
 }
 
