@@ -12,7 +12,8 @@ async function main() {
 
     const color = lit ? "red" : "black";
     ledView.style.backgroundColor = color;
-
+    const led = lit ? 1 : 0;
+    await port.write(led); // LED を点灯
 
 }
 
